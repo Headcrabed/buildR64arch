@@ -3,13 +3,13 @@
 # Set default configuration values
 # These can be overridden by entering them into config.sh
 
-ALARM_MIRROR="http://eu.mirror.archlinuxarm.org"
+ALARM_MIRROR="https://mirrors.tuna.tsinghua.edu.cn/archlinuxarm"
 
-QEMU_AARCH64="https://github.com/multiarch/qemu-user-static/releases/download/v7.2.0-1/qemu-aarch64-static.tar.gz"
+QEMU_AARCH64="https://kkgithub.com/multiarch/qemu-user-static/releases/download/v7.2.0-1/qemu-aarch64-static.tar.gz"
 
 REPOKEY="DD73724DCA27796790D33E98798137154FE1474C"
 REPOURL='ftp://ftp.woudstra.mywire.org/repo/$arch'
-BACKUPREPOURL='https://github.com/ericwoud/buildRKarch/releases/download/repo-$arch'
+BACKUPREPOURL='https://kkgithub.com/ericwoud/buildRKarch/releases/download/repo-$arch'
 
 # Standard erase size, when it cannot be determined (using /dev/sdX cardreader or loopdev)
 SD_ERASE_SIZE_MB=4             # in Mega bytes
@@ -22,14 +22,14 @@ IMAGE_SIZE_MB=7456             # Size of image
 IMAGE_FILE="./bpir.img"        # Name of image
 
 NEEDED_PACKAGES="base hostapd openssh wireless-regdb iproute2 nftables f2fs-tools dosfstools btrfs-progs\
- dtc mkinitcpio patch sudo evtest parted"
-EXTRA_PACKAGES="vim nano screen"
+ dtc mkinitcpio patch sudo evtest parted ppp"
+EXTRA_PACKAGES="vim nano screen ethtool"
 PREBUILT_PACKAGES="bpir64-atf-git linux-bpir64-git mmc-utils-git peekpoke-git ssh-fix-reboot hostapd-launch"
 SCRIPT_PACKAGES="curl ca-certificates udisks2 parted gzip bc f2fs-tools dosfstools"
 SCRIPT_PACKAGES_ARCHLX="base-devel      uboot-tools  ncurses        openssl"
 SCRIPT_PACKAGES_DEBIAN="build-essential u-boot-tools libncurses-dev libssl-dev flex bison"
 
-TIMEZONE="Europe/Paris"              # Timezone
+TIMEZONE="Asia/Shanghai"              # Timezone
 USERNAME="user"
 USERPWD="admin"
 ROOTPWD="admin"                      # Root password
